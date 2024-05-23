@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-###command=wget -q "--no-check-certificate" https://dreambox4u.com/emilnabil237/plugins/novalerstore/beengo/beengo.sh -O - | /bin/sh
+###command=wget -q "--no-check-certificate" https://raw.githubusercontent.com/emil237/novalerstore/main/beengo.sh -O - | /bin/sh
 ###########################
 PYTHON_VERSION=$(python -c"import platform; print(platform.python_version())")
 ##########################
@@ -28,7 +28,7 @@ else
 opkg install enigma2-plugin-systemplugins-serviceapp exteplayer3 ffmpeg gstplayer libc6 python-core python-futures3 python-image python-json python-multiprocessing python-pillow python-requests python-cryptography
 
 fi
-url="https://dreambox4u.com/emilnabil237/plugins/novalerstore/beengo"
+url="https://raw.githubusercontent.com/emil237/novalerstore/main"
 
 if [ "$PYTHON_VERSION" == 3.11.0 -o "$PYTHON_VERSION" == 3.11.1 -o "$PYTHON_VERSION" == 3.11.2 -o "$PYTHON_VERSION" == 3.11.3 -o "$PYTHON_VERSION" == 3.11.4 -o "$PYTHON_VERSION" == 3.11.5 ]; then
 echo ":You have $PYTHON_VERSION image ..."
